@@ -1,16 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Unica+One&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.app {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .btn {
     background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
     color: #fff;
     padding: 10px 36px;
     border-radius: 4px;
+    
 }
 
-a {
-    font-family: 'Montserrat';
+.btn:hover {
+    opacity: 0.5;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clash-display {
+    font-family: 'Clash Display', sans-serif;
+}
+
+.unica-one {
+    font-family: 'unica one', sans-serif;
 }
