@@ -1,12 +1,14 @@
 import React from 'react'
-import { light, bulb, chain, star, underline, spark, purpleBg, purpleBgRight } from '../images/logo'
+import { light, bulb, chain, star, underline, spark, purpleBg } from '../images/logo'
 import { headerImage } from '../images/pictures'
 
 const HeaderContent = () => {
+
+    
   return (
     <section className='px-[40px] md:px-[60px] pt-10'>
         {/* div for the text at the top of the header */}
-        <div className='relative flex justify-end items-end'>
+        <div className='relative flex justify-end items-end z-30'>
             <p className='italic text-white text-base md:text-[20px] tracking-wide'>
                 Igniting a Revolution in HR Innovation
             </p>
@@ -17,6 +19,7 @@ const HeaderContent = () => {
         <section className='mt-20 md:mt-0 flex flex-col md:flex-row justify-center items-center'>
             {/* row for the header texts */}
             <div className='flex justify-center items-center'>
+                <img src={star} alt="" className='absolute top-1/4 left-40 w-5 h-5 md:w-auto md:h-auto' />
                 <article className='flex flex-col justify-center items-center md:justify-normal md:items-start gap-5 text-white pb-10 z-30'>
 
                     {/* div for the first header text */}

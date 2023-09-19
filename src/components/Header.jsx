@@ -8,8 +8,6 @@ const Header = () => {
       <NavBar />
       <hr className='bg-black opacity-10' />
       <HeaderContent />
-      <hr className='bg-black opacity-10' />
-      <p className='h-20'>Hellooo</p>
     </div>
   )
 }

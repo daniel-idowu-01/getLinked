@@ -31,3 +31,7 @@
 .unica-one {
     font-family: 'unica one', sans-serif;
 }
+
+.balance {
+    text-wrap: balance;
+}
