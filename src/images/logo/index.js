@@ -9,7 +9,8 @@ import star from './star.svg'
 import underline from './underline.svg'
 import spark from './spark.svg'
 import purpleBg from './PurpleBg.svg'
+import purpleBgRight from './PurpleBgRight.svg'
 
 export {
-    logo, menuBar, circle, x, light, bulb, chain, star, underline, spark, purpleBg
+    logo, menuBar, circle, x, light, bulb, chain, star, underline, spark, purpleBg, purpleBgRight
 }

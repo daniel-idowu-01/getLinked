@@ -4,10 +4,10 @@ import { logo, menuBar, circle, x } from '../images/logo'
 const NavBar = () => {
 
     const [showSideBar, setShowSideBar] = useState(false)
-    const mobileNavBar = 'flex md:hidden justify-between items-center px-[60px] pt-8 pb-5'
-    const desktopNavBar = 'hidden md:flex justify-between items-center px-[60px] pt-8 pb-5'
+    const mobileNavBar = 'flex md:hidden justify-between items-center px-[40px] md:px-[60px] pt-8 pb-5'
+    const desktopNavBar = 'hidden md:flex justify-between items-center px-[40px] md:px-[60px] pt-8 pb-5'
     const menuExitIcon = 'flex relative justify-center items-center cursor-pointer w-[6%] left-[95%] hover:scale-110'
-    const mobileBarContainer = `${showSideBar ? 'opacity-100' : 'opacity-0 pointer-events-none'} absolute top-0 w-full h-screen p-10 bg-bg-color md:hidden text-white flex flex-col gap-10 z-20 transition-all`
+    const mobileBarContainer = `${showSideBar ? 'opacity-100' : 'opacity-0 pointer-events-none'} absolute top-0 w-full h-screen p-10 bg-bg-color md:hidden text-white flex flex-col gap-10 z-50 transition-all`
 
   return (
     <div>
@@ -43,7 +43,7 @@ const NavBar = () => {
             <a href="">Overview</a>
             <a href="">FAQs</a>
             <a href="">Contact</a>
-            <button className='btn w-1/3'>Register</button>
+            <button className='btn w-1/2'>Register</button>
         </section>
     </div>
   )
