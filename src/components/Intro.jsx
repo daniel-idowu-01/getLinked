@@ -4,7 +4,7 @@ import { bigBulb } from '../images/pictures'
 
 const Intro = () => {
 
-  const container = 'flex flex-col md:flex-row justify-center items-center text-white p-10 text-center md:text-left'
+  const container = 'flex flex-col md:flex-row justify-center items-center text-white p-10 md:p-20 text-center md:text-left'
 
   return (
     <section className={container}>

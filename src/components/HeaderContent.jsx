@@ -7,7 +7,7 @@ const HeaderContent = () => {
     const headerTextContainer = 'flex flex-col justify-center items-center md:justify-normal md:items-start gap-5 text-white pb-10 z-30'
 
   return (
-    <section className='px-[40px] md:px-[60px] pt-10'>
+    <section className='px-[40px] md:px-[80px] pt-10'>
         {/* div for the text at the top of the header */}
         <div className='relative flex justify-end items-end z-30'>
             <p className='italic text-white text-base md:text-[20px] tracking-wide'>
@@ -41,7 +41,7 @@ const HeaderContent = () => {
                         <img src={spark} alt="" className='absolute left-[112%] md:left-[120%] w-8 md:w-auto' />
                     </div>
 
-                    <p className='montserrat text-center'>Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
+                    <p className='montserrat text-center md:text-left'>Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
                     <button className='btn md:w-1/4'>Register</button>
 
                     <p className='unica-one text-6xl relative top-10'>
