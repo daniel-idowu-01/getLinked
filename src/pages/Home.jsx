@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Intro, Rules } from '../components'
+import { Header, Intro, Rules, KeyAttributes } from '../components'
 
 
 const Home = () => {
@@ -11,6 +11,9 @@ const Home = () => {
         <hr className='bg-black opacity-10' />
       <Rules />
         <hr className='bg-black opacity-10' />
+      <KeyAttributes />
+        <hr className='bg-black opacity-10' />
+        <div className='h-20'></div>
     </div>
   )
 }

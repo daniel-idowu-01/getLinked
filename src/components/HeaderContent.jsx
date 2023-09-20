@@ -4,7 +4,8 @@ import { headerImage } from '../images/pictures'
 
 const HeaderContent = () => {
 
-    
+    const headerTextContainer = 'flex flex-col justify-center items-center md:justify-normal md:items-start gap-5 text-white pb-10 z-30'
+
   return (
     <section className='px-[40px] md:px-[60px] pt-10'>
         {/* div for the text at the top of the header */}
@@ -20,7 +21,8 @@ const HeaderContent = () => {
             {/* row for the header texts */}
             <div className='flex justify-center items-center'>
                 <img src={star} alt="" className='absolute top-1/4 left-40 w-5 h-5 md:w-auto md:h-auto' />
-                <article className='flex flex-col justify-center items-center md:justify-normal md:items-start gap-5 text-white pb-10 z-30'>
+                <article
+                 className={headerTextContainer}>
 
                     {/* div for the first header text */}
                     <div className='relative flex justify-start'>
@@ -46,7 +48,7 @@ const HeaderContent = () => {
                         00<small className='text-xl'>H</small> 00<small className='text-xl'>M</small> 00<small className='text-xl'>S</small>
                     </p>
                 </article>
-                <img src={purpleBg} alt="" className='absolute md:top-0 filter brightness-[.50] z-20' />
+                <img src={purpleBg} alt="" className='absolute -top-[1%] md:top-0 rounded-[100%] md:rounded-none filter brightness-[.50] z-20' />
             </div>
             
 
