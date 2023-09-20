@@ -35,3 +35,9 @@
 .balance {
     text-wrap: balance;
 }
+
+/* faq styles */
+.faq-style-wrapper .faq-body .faq-row .row-title {
+    font-size: smaller;
+    margin-top: 10px;
+}
