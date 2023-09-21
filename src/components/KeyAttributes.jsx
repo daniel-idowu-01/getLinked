@@ -28,11 +28,13 @@ const KeyAttributes = () => {
         </p>
         {/* Lists in the section */}
         {
-          data.attributes.map((attribute) => (
-            <p className='montserrat leading-loose text-base z-20'>
-            <span className='text-lg text-secondary-color-2 font-semibold'>{attribute.title}</span>: 
-            {attribute.text}.
-        </p>
+          data.attributes.map((attribute, index) => (
+            <p className='montserrat leading-loose text-base z-20' key={index}>
+              <span className='text-lg text-secondary-color-2 font-semibold'>
+                {attribute.title}
+              </span>: 
+              {attribute.text}.
+            </p>
           ))
         }
         <button className='btn md:w-1/4 mt-5'>Register</button>

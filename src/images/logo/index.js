@@ -13,7 +13,13 @@ import purpleBgRight from './PurpleBgRight.svg'
 import introArrow from './introArrow.svg'
 import purpleStar from './purpleStar.svg'
 import questionMark from './questionMark.svg'
+import LibertyAssured from './Liberty company logo white colour.svg'
+import LibertyPay from './Liberty company logo white.svg'
+import Winwise from './Winwise logo White colour 1.svg'
+import Wisper from './wisper logo white.svg'
+import PayBox from './Paybox.svg'
+import Vuzual from './Vuzual Plus.svg'
 
 export {
-    logo, menuBar, circle, x, light, bulb, chain, star, underline, spark, purpleBg, purpleBgRight, introArrow, purpleStar, questionMark
+    logo, menuBar, circle, x, light, bulb, chain, star, underline, spark, purpleBg, purpleBgRight, introArrow, purpleStar, questionMark, LibertyAssured, LibertyPay, Winwise, Wisper, PayBox, Vuzual
 }

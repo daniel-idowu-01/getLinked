@@ -7,14 +7,17 @@ const TimelineComp = () => {
   return (
     <section>
       
-      <div className='text-center text-white p-20 pb-10'>
-        <p className='clash-display text-[20px] md:text-[32px] z-20'>
-          Timeline
-        </p>
-        <p className='montserrat leading-relaxed text-base z-20'>
-          Here is the breakdown of the time we anticipate using for the upcoming event.
-        </p>
-      </div>
+      <article className='flex justify-center items-center'>
+        <div className='md:w-1/2 text-center text-white p-20 pb-10'>
+          <p className='clash-display text-[20px] md:text-[32px] z-20'>
+            Timeline
+          </p>
+          <p className='montserrat leading-relaxed text-base z-20'>
+            Here is the breakdown of the time we anticipate using for the upcoming event
+          </p>
+        </div>
+      </article>
+      
 
       <VerticalTimeline>
 
