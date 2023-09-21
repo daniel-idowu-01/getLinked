@@ -1,109 +1,115 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { TbNumber1, TbNumber2, TbNumber3, TbNumber4, TbNumber5, TbNumber6 } from 'react-icons/tb'
 
 const TimelineComp = () => {
   return (
-    <div>
+    <section>
       
-      
+      <div className='text-center text-white p-20 pb-10'>
+        <p className='clash-display text-[20px] md:text-[32px] z-20'>
+          Timeline
+        </p>
+        <p className='montserrat leading-relaxed text-base z-20'>
+          Here is the breakdown of the time we anticipate using for the upcoming event.
+        </p>
+      </div>
 
       <VerticalTimeline>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={1}
+          contentStyle={{ background: '#D434FE', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid #D434FE' }}
+          date="November 18, 2023"
+          iconStyle={{ background: 'linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)', color: '#fff' }}
+          icon={<TbNumber1 />}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+          <h3 className="vertical-timeline-element-title text-lg font-semibold">Hackathon Announcement</h3>
           <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+          The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
           </p>
         </VerticalTimelineElement>
+
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={1}
+          contentStyle={{ background: '#D434FE', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid #D434FE' }}
+          date="November 18, 2023"
+          iconStyle={{ background: 'linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)', color: '#fff' }}
+          icon={<TbNumber2 />}
         >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+          <h3 className="vertical-timeline-elemen text-lg font-semibold">Teams Registration begins</h3>
           <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+          Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register
           </p>
         </VerticalTimelineElement>
+
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2008 - 2010"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={1}
+          contentStyle={{ background: '#D434FE', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid #D434FE' }}
+          date="November 18, 2023"
+          iconStyle={{ background: 'linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)', color: '#fff' }}
+          icon={<TbNumber3 />}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+          <h3 className="vertical-timeline-elemen text-lg font-semibold">Teams Registration ends</h3>
           <p>
-            User Experience, Visual Design
+            Interested Participants are no longer Allowed to register
           </p>
         </VerticalTimelineElement>
+
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2006 - 2008"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={1}
+          contentStyle={{ background: '#D434FE', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid #D434FE' }}
+          date="November 18, 2023"
+          iconStyle={{ background: 'linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)', color: '#fff' }}
+          icon={<TbNumber4 />}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+          <h3 className="vertical-timeline-e text-lg font-semibold">Announcement of the accepted teams and ideas</h3>
           <p>
-            User Experience, Visual Design
+            All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are formally announced
           </p>
         </VerticalTimelineElement>
+
+
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="April 2013"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={1}
+          contentStyle={{ background: '#D434FE', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid #D434FE' }}
+          date="November 18, 2023"
+          iconStyle={{ background: 'linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)', color: '#fff' }}
+          icon={<TbNumber5 />}
         >
-          <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+          <h3 className="vertical-timeline-e text-lg font-semibold">Getlinked Hackathon 1.0 Offically Begins</h3>
           <p>
-            Strategy, Social Media
+            Accepted teams can now proceed to build their ground breaking skill driven solutions
           </p>
         </VerticalTimelineElement>
+
+
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="November 2012"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={1}
+          contentStyle={{ background: '#D434FE', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid #D434FE' }}
+          date="November 18, 2023"
+          iconStyle={{ background: 'linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)', color: '#fff' }}
+          icon={<TbNumber6 />}
         >
-          <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+          <h3 className="vertical-timeline-e text-lg font-semibold">Demo Day</h3>
           <p>
-            Creative Direction, User Experience, Visual Design
+            Teams get the opportunity to pitch their projects to judges. The winner of the hackathon will also be announced on this day
           </p>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={1}
-        >
-          <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-          <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-          <p>
-            Creative Direction, Visual Design
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          icon={2}
-        />
+
       </VerticalTimeline>
 
-
-
-    </div>
+    </section>
   )
 }
 

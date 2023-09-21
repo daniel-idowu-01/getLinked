@@ -60,7 +60,7 @@ const FAQs = () => {
           
       </article>
 
-      {/* div for the first row */}
+      {/* div for the second row */}
       <article className='relative md:w-1/2 p-10'>
         <img 
          src={purpleStar} 
