@@ -37,7 +37,7 @@ const KeyAttributes = () => {
             </p>
           ))
         }
-        <button className='btn md:w-1/4 mt-5'>Register</button>
+        <button className='btn md:w-[30%] mt-5'>Read More</button>
       </article>
     </section>
   )
