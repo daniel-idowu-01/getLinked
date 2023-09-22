@@ -4,7 +4,9 @@ import { headerImage } from '../images/pictures'
 
 const HeaderContent = () => {
 
+    // styles
     const headerTextContainer = 'flex flex-col justify-center items-center md:justify-normal md:items-start gap-5 text-white pb-10 z-30'
+    const purpleBgStyle = 'absolute -top-[1%] md:top-0 rounded-[100%] md:rounded-none filter brightness-[.50] z-20 pointer-events-none'
 
   return (
     <section className='px-[40px] md:px-[80px] pt-10'>
@@ -48,15 +50,15 @@ const HeaderContent = () => {
                         00<small className='text-xl'>H</small> 00<small className='text-xl'>M</small> 00<small className='text-xl'>S</small>
                     </p>
                 </article>
-                <img src={purpleBg} alt="" className='absolute -top-[1%] md:top-0 rounded-[100%] md:rounded-none filter brightness-[.50] z-20' />
+                <img src={purpleBg} alt="" className={purpleBgStyle} />
             </div>
             
 
             {/* row for the header image */}
             <article>
                 <div className='relative flex justify-center items-center pt-10'>
-                    <img src={headerImage} alt="" className='filter grayscale' />
-                    <img src={light} alt="" className='absolute w-[90%]' />
+                    <img src={headerImage} loading='lazy' alt="" className='filter grayscale' />
+                    <img src={light} loading='lazy' alt="" className='absolute w-[90%]' />
                 </div>
             </article>
         </section>

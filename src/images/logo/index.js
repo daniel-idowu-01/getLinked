@@ -19,7 +19,13 @@ import Winwise from './Winwise logo White colour 1.svg'
 import Wisper from './wisper logo white.svg'
 import PayBox from './Paybox.svg'
 import Vuzual from './Vuzual Plus.svg'
+import instagram from './mdi_instagram.svg'
+import twitter from './twitter.svg'
+import facebook from './facebook.svg'
+import linkedin from './ri_linkedin-fill.svg'
+import phone from './phone.svg'
+import location from './location.svg'
 
 export {
-    logo, menuBar, circle, x, light, bulb, chain, star, underline, spark, purpleBg, purpleBgRight, introArrow, purpleStar, questionMark, LibertyAssured, LibertyPay, Winwise, Wisper, PayBox, Vuzual
+    logo, menuBar, circle, x, light, bulb, chain, star, underline, spark, purpleBg, purpleBgRight, introArrow, purpleStar, questionMark, LibertyAssured, LibertyPay, Winwise, Wisper, PayBox, Vuzual, instagram, twitter, facebook, linkedin, phone, location
 }

@@ -15,10 +15,26 @@ const NavBar = () => {
         <nav className={desktopNavBar}>
             <img src={logo} alt='' loading='lazy' className='w-[10%]' />
             <div className='text-white flex gap-14'>
-                <a href="">Timeline</a>
-                <a href="">Overview</a>
-                <a href="">FAQs</a>
-                <a href="">Contact</a>
+                <a
+                 href="javascript:void(0)" 
+                 className='hover:opacity-80 hover:cursor-pointer'>
+                    Timeline
+                </a>
+                <a 
+                 href="javascript:void(0)" 
+                 className='hover:opacity-80 hover:cursor-pointer'>
+                    Overview
+                </a>
+                <a 
+                href="javascript:void(0)" 
+                className='hover:opacity-80 hover:cursor-pointer'>
+                    FAQs
+                </a>
+                <a 
+                href="javascript:void(0)" 
+                className='hover:opacity-80 hover:cursor-pointer'>
+                    Contact
+                </a>
             </div>
             <button className='btn'>Register</button>
         </nav>
@@ -39,10 +55,26 @@ const NavBar = () => {
                 <img src={circle} alt="" loading='lazy' />
                 <img src={x} alt="" loading='lazy' className='absolute' />
             </div>
-            <a href="">Timeline</a>
-            <a href="">Overview</a>
-            <a href="">FAQs</a>
-            <a href="">Contact</a>
+                <a
+                 href="javascript:void(0)" 
+                 className='hover:opacity-80 hover:cursor-pointer'>
+                    Timeline
+                </a>
+                <a 
+                 href="javascript:void(0)" 
+                 className='hover:opacity-80 hover:cursor-pointer'>
+                    Overview
+                </a>
+                <a 
+                href="javascript:void(0)" 
+                className='hover:opacity-80 hover:cursor-pointer'>
+                    FAQs
+                </a>
+                <a 
+                href="javascript:void(0)" 
+                className='hover:opacity-80 hover:cursor-pointer'>
+                    Contact
+                </a>
             <button className='btn w-1/2'>Register</button>
         </section>
     </div>

@@ -5,7 +5,7 @@ import { lock } from '../images/pictures'
 
 const Privacy = () => {
 
-    const container = 'flex flex-col md:flex-row gap-20 md:gap-0 justify-center items-center text-white p-10 md:p-20 text-center md:text-left'
+    const container = 'flex flex-col md:flex-row gap-20 md:gap-0 justify-center items-center text-white p-10 md:p-20 text-center md:text-left mb-10 md:mb-0'
 
     // section image url
     const imageSource = 'https://s3-alpha-sig.figma.com/img/6db9/36c6/c29a7f48697d2a5a69348e7d27a23b89?Expires=1696204800&Signature=bNxstTSEYXbZoBpwY1daRPhKxKT2QWcslEajrqcfM3PkXwQzsldJdVZMdFuDNGD0~OvSu0fMkW~B4w61OFHsHsU-xOBPxk4KGu5yJSoO~sWX8sZnErextViXDadeRA~JiVv14mGC8C3Zbcgd2wrcQ99WF2sO5PWiie3VNrr13n5ih485ZT318I4rgz8VgOXeuJelWcIKmR4K6baFO9SFd5TWgbKYQAvj8cL0BqLpA5u~LZpiaSdbKUE2B1yxZEiMieWWYbrUZWMf1hgZ1AB9nwRVcW2SscfUPWShC4SQOIuc6v05HxSnce9Mk45Ux6mMHhAonaddjBYxs3b5XKyJSQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'

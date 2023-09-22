@@ -1,10 +1,6 @@
 import React from 'react'
-import { logo } from '../images/logo'
-import { AiOutlineInstagram } from 'react-icons/ai'
-import { FaXTwitter, FaFacebookF } from 'react-icons/fa'
-import { BiLogoLinkedin } from 'react-icons/bi'
-import { BiPhoneCall } from 'react-icons/bi'
-import { IoLocationOutline } from 'react-icons/io'
+import { logo, instagram, twitter, facebook, linkedin, phone, location } from '../images/logo'
+
 
 const Footer = () => {
   return (
@@ -27,26 +23,29 @@ const Footer = () => {
                 <p>Timeline</p>
                 <p>FAQs</p>
                 <p>Register</p>
-                <div>
+                <div className='flex items-center gap-3'>
                     <p className='text-secondary-color'>Follow Us</p>
-                    <AiOutlineInstagram />
-                    <FaXTwitter />
-                    <FaFacebookF />
-                    <BiLogoLinkedin />
+                    <img src={instagram} alt="" />
+                    <img src={twitter} alt="" />
+                    <img src={facebook} alt="" />
+                    <img src={linkedin} alt="" />
                 </div>
             </section>
 
             <section className='flex flex-col gap-3'>
                 <p className='text-lg text-secondary-color' >Contact Us</p>
-                <p>
+                <p className='flex items-center gap-1'>
+                    <img src={phone} alt="" />
                     +234 679 81619
                 </p>
-                <p>
+                <p className='flex items-center gap-1'>
+                    <img src={location} alt="" />
                     27,Alara Street Yaba 100012 Lagos State
                 </p>
             </section>
         </article>
-      
+
+        <p className='text-center p-5 pt-10'>All rights reserved. © getlinked Ltd.</p>
     </footer>
   )
 }
