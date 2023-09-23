@@ -3,9 +3,10 @@ import { NavBar, Success } from '../components'
 
 const Register = () => {
 
-    const [size, setSize] = useState('')
-    const [category, setCategory] = useState('')
+    const [category, setCategory] = useState(0)
+    const [success, setSuccess] = useState(false)
     const [categories, setCategories] = useState([])
+    const [isChecked, setIsChecked] = useState(false);
     const headerStyle = 'clash-display text-secondary-color text-lg font-semibold'
     const box = 'flex flex-col gap-7 bg-white bg-opacity-[0.03] p-10 md:p-20 rounded-md'
     const container = 'relative flex flex-col md:flex-row gap-10 md:gap-0 justify-evenly items-center p-10 md:p-20'
@@ -15,14 +16,17 @@ const Register = () => {
     const imageSource = 'https://s3-alpha-sig.figma.com/img/a70f/d340/66fca8d9215c65352fc6e3a1082aa32c?Expires=1696204800&Signature=Vc5nlG8cyYQDxGUV736MANc03HWMfC4Bqdyk4tSrpcjUQovBKc5EIzQmRPRyAiWIDjOBgjpDfImsTuzAWqRSvCPxMD9JaMvxyZtxDnz~XREosX1zQKfA6EseTdSSvY581feLBjrae4M7lUfVSb7RCWY5v5ayNan6WJZ4rXsyG-r129CIvnQfK4d6j3QBrnLfR~bjW3ZxoXc8cA9sVMpqOd3KGCqh9tg-jSfsEMRXoOCMqQNWVsegPhnvBlxJ0E88F~ZIEZ~-W2EPAKpGDRMgM-7h1YawFnjBcTeTz74EWmHcMD4-Oln-soI2qBcEJaFRKzTneAw4q8AcSuw-RYWQrA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
 
 
+    // info to be sent to the backend
     const [userInfo, setUserInfo] = useState({
         team_name: '',
-        phone: '',
+        phone_number: '',
         email: '',
         project_topic: '',
-        category: category,
-        group_size: size
+        group_size: 0,
+        privacy_poclicy_accepted: isChecked
     })
+
+    const newUserInfo = {...userInfo, category}
 
     // function to be handled when user inputs a value
   const handleChange = (event) => {
@@ -34,9 +38,25 @@ const Register = () => {
     })
   }
 
-  console.log(userInfo)
 
+   // function to be handled when user submits form
+   const handleSubmit = async (e) => {
+        e.preventDefault()
 
+        const response = await fetch('https://backend.getlinked.ai/hackathon/registration', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newUserInfo)
+        })
+        const data = await response.json()
+        if(data) {
+            setSuccess(true)
+        }
+   }
+
+    // to fetch the category list
     useEffect(() => {
         const getCategories = async () => {
             await fetch('https://backend.getlinked.ai/hackathon/categories-list')
@@ -47,14 +67,14 @@ const Register = () => {
          getCategories();
     }, [])
 
-    ////////////////////
+    // functions tp change the category and size value
     const handleCategoryChange = (event) => {
         setCategory(event.target.value)
     }
 
-    const handleSizeChange = (event) => {
-        setSize(event.target.value)
-    }
+    const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
 
   return (
     <section className='text-white'>
@@ -82,7 +102,7 @@ const Register = () => {
                         </p>
                     </div>
                     
-                    <form action="#">
+                    <form onSubmit={handleSubmit} method='post'>
                         {/* created a section to grid the inputs */}
                         <section className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                             <div>
@@ -99,14 +119,15 @@ const Register = () => {
                             </div>
 
                             <div>
-                                <label htmlFor="phone">Phone</label>
+                                <label htmlFor="phone_number">Phone</label>
                                 <input 
-                                    type="text" 
-                                    name="phone" 
-                                    id="phone" 
+                                    type="number" 
+                                    name="phone_number" 
+                                    id="phone_number" 
                                     placeholder='Enter your phone number'
                                     className={inputStyle}
                                     onChange={handleChange}
+                                    required
                                 />
                             </div>
 
@@ -138,8 +159,9 @@ const Register = () => {
                             <div>
                                 <label htmlFor="category">Category</label>
                                 <select
+                                 name="category" 
+                                 id="category"
                                  onChange={handleCategoryChange}
-                                 name="category" id="category"
                                  value={category}
                                  className={`${inputStyle} px-3 bg-transparent`}>
                                     <option value="" className='bg-[#150E28]' disabled>
@@ -147,7 +169,7 @@ const Register = () => {
                                     </option>
                                     {categories.map(category => (
                                         <option
-                                         value={category.name} 
+                                         value={category.id} 
                                          key={category.id} c
                                          className='bg-[#150E28]'
                                          >
@@ -159,16 +181,12 @@ const Register = () => {
                             
                             <div>
                                 <label htmlFor="group_size">Group Size</label>
-                                <select
-                                 onChange={handleSizeChange}
-                                 name="group_size" id="group_size" 
-                                 value={size}
-                                 className={`${inputStyle}`}>
-                                    <option value="" disabled>Select Company Size</option>
-                                    <option value="<10" className='bg-[#150E28]'>Less than 10</option>
-                                    <option value="10-50" className='bg-[#150E28]'>10 - 50</option>
-                                    <option value=">50"className='bg-[#150E28]'>More than 50</option>
-                                </select>
+                                <input type="number" 
+                                name="group_size" 
+                                id="group_size" 
+                                placeholder='What is the size of your group'
+                                className={inputStyle}
+                                onChange={handleChange}/>
                             </div>
                             
                         </section>
@@ -178,7 +196,12 @@ const Register = () => {
                             <p className='text-sm text-secondary-color italic'>
                                 Please review your registration details before submitting
                             </p>
-                            <input type="checkbox" name="agree" id="agree" />
+                            <input
+                             type="checkbox" 
+                             checked={isChecked}
+                             onChange={handleCheckboxChange}
+                             name="privacy_poclicy_accepted" 
+                             id="agree" />
                             <span className='ml-3 text-sm'>
                                 I agreed with the event terms and conditions and privacy policy
                             </span>
@@ -192,7 +215,7 @@ const Register = () => {
                 </section>
             </div>
         </article>
-        {/* <Success /> */}
+        {/* {success && <Success />} */}
     </section>
   )
 }
