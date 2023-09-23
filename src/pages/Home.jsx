@@ -1,10 +1,19 @@
-import React from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import React, {useEffect} from 'react'
 import { Header, Intro, Rules, KeyAttributes,  FAQs, TimelineComp, Rewards, Partners, Privacy, Footer } from '../components'
 
 
 const Home = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    })
+  }, [])
+
   return (
-    <div className='home overflow-x-hidden'>
+    <div className='home overflow-x-hidden relative top-0'>
       <Header />
         <hr className='bg-secondary-color opacity-30' />
       <Intro />

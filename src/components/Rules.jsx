@@ -8,7 +8,7 @@ const Rules = () => {
     const imageSource = 'https://s3-alpha-sig.figma.com/img/0542/1f67/435623be1bd279e42923f1c7be3982a0?Expires=1696204800&Signature=UC20fA-IsnPyj1ONZzMTO12upRS9iERE6AnfQNMpCO9odqQMWo382jZDNcBixNZjjbjdVSSIPhqm5r6YANC8t7b3f2mg0~TQ2isXThAbIhVC3cuqPwcQD95Cr2o0KZWo~bTAf4b~BTBwjFp1PIK5ZuXg0TU0rCH~V~ts0P2-7I-1EyY9qV8x87iLyPFmAuxeyf-zc7ZyrU6DZ3WHdpXLBt7tgBPCVO7zJj2dZ80nKbriem1GJb5tVCx6Cm8xA6DW0Ux~Y~0rGiEPeNefWx~Iax4pnPPMrUh4giB2jRCd9kJDuw9XA2GIhZt-FPAlJPjAbFuGR1~pF5aRK0aM3lygnw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
     
   return (
-    <section className={container}>
+    <section className={container} data-aos='zoom-in'>
       
       {/* div for the first row */}
       <article className='relative flex flex-col gap-3 md:w-1/2 mt-10 md:mt-0'>

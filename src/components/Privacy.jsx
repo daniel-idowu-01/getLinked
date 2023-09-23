@@ -11,7 +11,7 @@ const Privacy = () => {
     const imageSource = 'https://s3-alpha-sig.figma.com/img/6db9/36c6/c29a7f48697d2a5a69348e7d27a23b89?Expires=1696204800&Signature=bNxstTSEYXbZoBpwY1daRPhKxKT2QWcslEajrqcfM3PkXwQzsldJdVZMdFuDNGD0~OvSu0fMkW~B4w61OFHsHsU-xOBPxk4KGu5yJSoO~sWX8sZnErextViXDadeRA~JiVv14mGC8C3Zbcgd2wrcQ99WF2sO5PWiie3VNrr13n5ih485ZT318I4rgz8VgOXeuJelWcIKmR4K6baFO9SFd5TWgbKYQAvj8cL0BqLpA5u~LZpiaSdbKUE2B1yxZEiMieWWYbrUZWMf1hgZ1AB9nwRVcW2SscfUPWShC4SQOIuc6v05HxSnce9Mk45Ux6mMHhAonaddjBYxs3b5XKyJSQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
 
   return (
-    <section className={container}>
+    <section className={container} data-aos='zoom-in'>
 
       {/* div for the first row */}
       <article className='relative flex flex-col items-center md:items-start gap-3 md:w-1/2 mt-10 md:mt-0'>

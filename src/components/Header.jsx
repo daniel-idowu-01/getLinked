@@ -4,7 +4,7 @@ import HeaderContent from './HeaderContent'
 
 const Header = () => {
   return (
-    <div className=''>
+    <div data-aos='zoom-in'>
       <NavBar />
       <hr className='bg-black opacity-10' />
       <HeaderContent />

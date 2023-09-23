@@ -6,7 +6,7 @@ const Partners = () => {
     const gridItem = 'border-2 border-secondary-color h-full w-full p-3 md:p-5 md:px-10'
 
   return (
-    <section className='pb-20'>
+    <section className='pb-20' data-aos='zoom-in'>
         <article className='flex justify-center items-center'>
             <div className='md:w-1/2 text-center text-white p-20 pb-10'>
                 <p className='clash-display text-[20px] md:text-[32px] z-20'>

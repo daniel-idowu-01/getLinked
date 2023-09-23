@@ -53,6 +53,7 @@ const Register = () => {
         const data = await response.json()
         if(data) {
             setSuccess(true)
+            window.scrollTo({ top: 0});
         }
    }
 
@@ -196,6 +197,7 @@ const Register = () => {
                             <p className='text-sm text-secondary-color italic'>
                                 Please review your registration details before submitting
                             </p>
+
                             <input
                              type="checkbox" 
                              checked={isChecked}
@@ -205,6 +207,7 @@ const Register = () => {
                             <span className='ml-3 text-sm'>
                                 I agreed with the event terms and conditions and privacy policy
                             </span>
+
                             <button 
                                 type='submit' 
                                 className='btn w-full mt-3'>
@@ -215,7 +218,7 @@ const Register = () => {
                 </section>
             </div>
         </article>
-        {/* {success && <Success />} */}
+        {success && <Success />}
     </section>
   )
 }

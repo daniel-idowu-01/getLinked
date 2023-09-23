@@ -7,7 +7,7 @@ const Intro = () => {
   const container = 'flex flex-col md:flex-row justify-center items-center text-white p-10 md:p-20 text-center md:text-left'
 
   return (
-    <section className={container}>
+    <section className={container} data-aos='zoom-in'>
       <article className='relative md:w-1/2 p-10'>
         <img src={purpleStar} alt="" className='absolute w-5' />
         <img src={bigBulb} alt="" />

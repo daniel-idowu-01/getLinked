@@ -11,7 +11,7 @@ const KeyAttributes = () => {
     const imageSource = 'https://s3-alpha-sig.figma.com/img/1d4e/0b71/a45a506fa0896ea1c741a01208c3ac2b?Expires=1696204800&Signature=jNUG~6E6-C9yGqR-4Flv1HyjhbDTfLbhe-LMtLAOktnrjxXtdkKdFB4CYRzYIixNEe3UtB0WDXW8GJhX2yweOyOghDzIcKM4FevDHrWl7i4n8Asn08xn1Qp-tMlHIWKU17tlnB7iZIz3QLqfxOQeUu5TP5N-E9l9RM9BupuCOP~V3YdLESr301zpzaiL3MXUZI2vXAMIhl7HwWoK9wOFSR3T3u5vYba~PUASrji5VFA1MndRPjDojVZ3iDXY5rmtICktX-kbQqf3togkSxEEFC-o0sloW4jZ8duNf-w6k6FlYA~sH3KDqSjua4HFO-CnC8pWr6eUnLMiCW2w5OjjwQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
 
   return (
-    <section className={container}>
+    <section className={container} data-aos='zoom-in'>
       {/* div for the first row */}
       <article className='relative md:w-1/2 p-10'>
         <img src={purpleStar} alt="purple star" className='absolute w-5' />

@@ -10,7 +10,7 @@ const Rewards = () => {
     const titleContainerStyle = 'relative text-white text-center md:text-left md:w-1/2 md:left-1/2 pt-20 pb-0'
 
   return (
-    <section>
+    <section data-aos='zoom-in'>
 
         {/* div for the title and subtitle text */}
         <div className={titleContainerStyle}>
