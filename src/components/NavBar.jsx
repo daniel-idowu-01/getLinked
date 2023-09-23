@@ -15,7 +15,7 @@ const NavBar = () => {
         {/* Desktop Navigation Bar */}
         <nav className={desktopNavBar}>
             <Link to='/'>
-                <img src={logo} alt='' loading='lazy' className='w-2/3' />
+                <img src={logo} alt='' loading='lazy'  className='w-2/3 hover:cursor-pointer' />
             </Link>
             <div className='text-white flex gap-14'>
                 <a
@@ -51,7 +51,9 @@ const NavBar = () => {
 
         {/* Mobile Navigation Bar */}
         <nav className={mobileNavBar}>
-            <img src={logo} alt='' loading='lazy' className='w-1/3' />
+            <Link to='/'>
+                <img src={logo} alt='' loading='lazy' className='w-2/3 hover:cursor-pointer' />
+            </Link>
             <img
              src={menuBar}
              alt='' loading='lazy'

@@ -13,7 +13,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div className='home overflow-x-hidden relative top-0'>
+    <div className='home overflow-x-hidden'>
       <Header />
         <hr className='bg-secondary-color opacity-30' />
       <Intro />
