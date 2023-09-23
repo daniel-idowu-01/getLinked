@@ -8,6 +8,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.home {
+    scroll-behavior: smooth;
+}
+
 .btn {
     background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
     color: #fff;

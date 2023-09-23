@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom'
 import { logo, menuBar, circle, x } from '../images/logo'
 
 const NavBar = () => {
@@ -13,30 +14,39 @@ const NavBar = () => {
     <div>
         {/* Desktop Navigation Bar */}
         <nav className={desktopNavBar}>
-            <img src={logo} alt='' loading='lazy' className='w-[10%]' />
+            <Link to='/'>
+                <img src={logo} alt='' loading='lazy' className='w-2/3' />
+            </Link>
             <div className='text-white flex gap-14'>
                 <a
-                 href="javascript:void(0)" 
+                 href='javascript:void(0)' 
                  className='hover:opacity-80 hover:cursor-pointer'>
                     Timeline
                 </a>
-                <a 
-                 href="javascript:void(0)" 
+                <a
+                 href='javascript:void(0)' 
                  className='hover:opacity-80 hover:cursor-pointer'>
                     Overview
                 </a>
-                <a 
-                href="javascript:void(0)" 
-                className='hover:opacity-80 hover:cursor-pointer'>
+                <a
+                 href='javascript:void(0)' 
+                 className='hover:opacity-80 hover:cursor-pointer'>
                     FAQs
                 </a>
-                <a 
-                href="javascript:void(0)" 
-                className='hover:opacity-80 hover:cursor-pointer'>
+                <Link 
+                to='/contact'
+                className='hover:opacity-80 hover:cursor-pointer'
+                >
                     Contact
-                </a>
+                </Link>
             </div>
-            <button className='btn'>Register</button>
+
+            <Link to='/register'>
+                <button className='btn'>
+                    Register
+                </button>
+            </Link>
+            
         </nav>
 
         {/* Mobile Navigation Bar */}
@@ -55,27 +65,37 @@ const NavBar = () => {
                 <img src={circle} alt="" loading='lazy' />
                 <img src={x} alt="" loading='lazy' className='absolute' />
             </div>
-                <a
-                 href="javascript:void(0)" 
+                <Link
+                 to='/' 
+                 onClick={() => setShowSideBar(false)}
                  className='hover:opacity-80 hover:cursor-pointer'>
                     Timeline
-                </a>
-                <a 
-                 href="javascript:void(0)" 
+                </Link>
+                <Link
+                 to='/' 
+                 onClick={() => setShowSideBar(false)}
                  className='hover:opacity-80 hover:cursor-pointer'>
                     Overview
-                </a>
-                <a 
-                href="javascript:void(0)" 
-                className='hover:opacity-80 hover:cursor-pointer'>
+                </Link>
+                <Link
+                 to='/' 
+                 onClick={() => setShowSideBar(false)}
+                 className='hover:opacity-80 hover:cursor-pointer'>
                     FAQs
-                </a>
-                <a 
-                href="javascript:void(0)" 
-                className='hover:opacity-80 hover:cursor-pointer'>
+                </Link>
+                <Link 
+                to='/contact'
+                onClick={() => setShowSideBar(false)}
+                className='hover:opacity-80 hover:cursor-pointer'
+                >
                     Contact
-                </a>
-            <button className='btn w-1/2'>Register</button>
+                </Link>
+                <Link to='/register'>
+
+                <button className='btn w-1/2'>
+                    Register
+                </button>
+            </Link>
         </section>
     </div>
   )

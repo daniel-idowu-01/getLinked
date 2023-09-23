@@ -4,7 +4,7 @@ import { Header, Intro, Rules, KeyAttributes,  FAQs, TimelineComp, Rewards, Part
 
 const Home = () => {
   return (
-    <div className='overflow-x-hidden'>
+    <div className='home overflow-x-hidden'>
       <Header />
         <hr className='bg-secondary-color opacity-30' />
       <Intro />

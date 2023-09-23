@@ -34,8 +34,8 @@ const Contact = () => {
 
             {/* some images used for styling */}
             <img src={purpleBg} alt="" className={imageStyle} />
-            <img src={purpleStar} alt="" className={`${imageStyle} w-auto h-auto left-1/2`} />
-            <img src={purpleStar} alt="" className={`${imageStyle} w-auto h-auto left-1/2`} />
+            <img src={purpleStar} alt="" className={`${imageStyle} w-5 h-5 left-[85%]`} />
+            <img src={purpleStar} alt="" className={`${imageStyle} w-5 h-5 left-[30%] top-1/2`} />
 
             {/* div for inputing details for contacting us */} 
             <article>

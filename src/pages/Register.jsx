@@ -1,15 +1,27 @@
 import React, { useEffect, useState } from 'react'
-import { NavBar } from '../components'
+import { NavBar, Success } from '../components'
 
 const Register = () => {
+
+    const [size, setSize] = useState('')
+    const [category, setCategory] = useState('')
+    const [categories, setCategories] = useState([])
+    const headerStyle = 'clash-display text-secondary-color text-lg font-semibold'
+    const box = 'flex flex-col gap-7 bg-white bg-opacity-[0.03] p-10 md:p-20 rounded-md'
+    const container = 'relative flex flex-col md:flex-row gap-10 md:gap-0 justify-evenly items-center p-10 md:p-20'
+    const inputStyle = 'block w-full bg-transparent border border-white px-4 py-2 rounded-md outline-none placeholder:text-sm'
+
+    // source of the image
+    const imageSource = 'https://s3-alpha-sig.figma.com/img/a70f/d340/66fca8d9215c65352fc6e3a1082aa32c?Expires=1696204800&Signature=Vc5nlG8cyYQDxGUV736MANc03HWMfC4Bqdyk4tSrpcjUQovBKc5EIzQmRPRyAiWIDjOBgjpDfImsTuzAWqRSvCPxMD9JaMvxyZtxDnz~XREosX1zQKfA6EseTdSSvY581feLBjrae4M7lUfVSb7RCWY5v5ayNan6WJZ4rXsyG-r129CIvnQfK4d6j3QBrnLfR~bjW3ZxoXc8cA9sVMpqOd3KGCqh9tg-jSfsEMRXoOCMqQNWVsegPhnvBlxJ0E88F~ZIEZ~-W2EPAKpGDRMgM-7h1YawFnjBcTeTz74EWmHcMD4-Oln-soI2qBcEJaFRKzTneAw4q8AcSuw-RYWQrA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
+
 
     const [userInfo, setUserInfo] = useState({
         team_name: '',
         phone: '',
         email: '',
         project_topic: '',
-        category: '',
-        group_size: ''
+        category: category,
+        group_size: size
     })
 
     // function to be handled when user inputs a value
@@ -24,16 +36,6 @@ const Register = () => {
 
   console.log(userInfo)
 
-    const [categories, setCategories] = useState([])
-    const headerStyle = 'clash-display text-secondary-color text-lg font-semibold'
-    const box = 'flex flex-col gap-7 bg-white bg-opacity-[0.03] p-10 md:p-20 rounded-md'
-    const imageStyle = 'md:h-1/2 w-2/3 absolute brightness-50 rounded-full -left-[25%] top-0 z-10'
-    const container = 'relative flex flex-col md:flex-row gap-10 md:gap-0 justify-evenly items-center p-10 md:p-20'
-    const inputStyle = 'block w-full bg-transparent border border-white px-4 py-2 rounded-md outline-none placeholder:text-sm'
-
-    // source of the image
-    const imageSource = 'https://s3-alpha-sig.figma.com/img/a70f/d340/66fca8d9215c65352fc6e3a1082aa32c?Expires=1696204800&Signature=Vc5nlG8cyYQDxGUV736MANc03HWMfC4Bqdyk4tSrpcjUQovBKc5EIzQmRPRyAiWIDjOBgjpDfImsTuzAWqRSvCPxMD9JaMvxyZtxDnz~XREosX1zQKfA6EseTdSSvY581feLBjrae4M7lUfVSb7RCWY5v5ayNan6WJZ4rXsyG-r129CIvnQfK4d6j3QBrnLfR~bjW3ZxoXc8cA9sVMpqOd3KGCqh9tg-jSfsEMRXoOCMqQNWVsegPhnvBlxJ0E88F~ZIEZ~-W2EPAKpGDRMgM-7h1YawFnjBcTeTz74EWmHcMD4-Oln-soI2qBcEJaFRKzTneAw4q8AcSuw-RYWQrA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
-
 
     useEffect(() => {
         const getCategories = async () => {
@@ -44,6 +46,15 @@ const Register = () => {
          }
          getCategories();
     }, [])
+
+    ////////////////////
+    const handleCategoryChange = (event) => {
+        setCategory(event.target.value)
+    }
+
+    const handleSizeChange = (event) => {
+        setSize(event.target.value)
+    }
 
   return (
     <section className='text-white'>
@@ -126,10 +137,20 @@ const Register = () => {
 
                             <div>
                                 <label htmlFor="category">Category</label>
-                                <select name="category" id="category" className={`${inputStyle} px-3 bg-transparent`}>
-                                    <option value="Select your category" className='bg-black' disabled>Select Category</option>
+                                <select
+                                 onChange={handleCategoryChange}
+                                 name="category" id="category"
+                                 value={category}
+                                 className={`${inputStyle} px-3 bg-transparent`}>
+                                    <option value="" className='bg-[#150E28]' disabled>
+                                        Select Category
+                                    </option>
                                     {categories.map(category => (
-                                        <option value={category.name} key={category.id}>
+                                        <option
+                                         value={category.name} 
+                                         key={category.id} c
+                                         className='bg-[#150E28]'
+                                         >
                                             {category.name}
                                         </option>
                                     ))}
@@ -138,10 +159,15 @@ const Register = () => {
                             
                             <div>
                                 <label htmlFor="group_size">Group Size</label>
-                                <select name="group_size" id="group_size" className={`${inputStyle}`}>
-                                    <option value="Select" disabled>Select Company Size</option>
-                                    <option value="<10">Less than 10</option>
-                                    <option value="10 - 50">10 - 50</option>
+                                <select
+                                 onChange={handleSizeChange}
+                                 name="group_size" id="group_size" 
+                                 value={size}
+                                 className={`${inputStyle}`}>
+                                    <option value="" disabled>Select Company Size</option>
+                                    <option value="<10" className='bg-[#150E28]'>Less than 10</option>
+                                    <option value="10-50" className='bg-[#150E28]'>10 - 50</option>
+                                    <option value=">50"className='bg-[#150E28]'>More than 50</option>
                                 </select>
                             </div>
                             
@@ -166,6 +192,7 @@ const Register = () => {
                 </section>
             </div>
         </article>
+        {/* <Success /> */}
     </section>
   )
 }

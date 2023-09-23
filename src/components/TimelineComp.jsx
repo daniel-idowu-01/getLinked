@@ -1,6 +1,6 @@
 import React from 'react'
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { TbNumber1, TbNumber2, TbNumber3, TbNumber4, TbNumber5, TbNumber6 } from 'react-icons/tb'
 
 const TimelineComp = () => {
@@ -20,7 +20,6 @@ const TimelineComp = () => {
       
 
       <VerticalTimeline>
-
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: '#D434FE', color: '#fff' }}
