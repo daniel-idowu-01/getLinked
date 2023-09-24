@@ -3,8 +3,7 @@
     "rows": [
         {
             "title": "Can I work on a project I started before the hackathon?",
-            "content":
-                "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor."
+            "content": "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor."
         },
         {
             "title": "What happens if I need help during the hackathon?",
@@ -15,7 +14,7 @@
             "content": "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem. Fusc."
         },
         {
-            "title": "Can I join a team or do I have to come with one?a",
+            "title": "Can I join a team or do I have to come with one?",
             "content": "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem. Fusc."
         },
         {
@@ -23,7 +22,7 @@
             "content": "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem. Fusc."
         },
         {
-            "title": "Can I work on a project I started before the hackathon?a",
+            "title": "Can I work on a project I started before the hackathon?",
             "content": "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem. Fusc."
         }
     ]
