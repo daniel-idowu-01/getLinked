@@ -1,6 +1,5 @@
 import React from 'react'
 import { light, bulb, chain, star, underline, spark, purpleBg } from '../images/logo'
-import { headerImage } from '../images/pictures'
 
 const HeaderContent = () => {
 
@@ -8,6 +7,7 @@ const HeaderContent = () => {
     const headerTextContainer = 'flex flex-col justify-center items-center md:justify-normal md:items-start gap-5 text-white pb-10 z-30'
     const purpleBgStyle = 'absolute -top-[1%] md:top-0 rounded-[100%] md:rounded-none filter brightness-[.50] z-20 pointer-events-none'
 
+    const imageSource = 'https://s3-alpha-sig.figma.com/img/2cea/d700/cfbd4eb06b68c33fac2a89295904df2c?Expires=1696809600&Signature=Ddgrzrcy6UQOirDSOMkOB8KZK1QmUpZl9kO4s7YcRprVCWySKiuTjX2Hoi-E42RPfO0-qd5wxtU1eBymblt0eQBSnkJT7pFn41cbch8ciXHbR7xuJXz-Qzv9t1nML3sfgmSpTUcOYJ-kJtsKGyptHJXE6DZhE2JWXuV2cBCSLXYnDKvtEporxRHsZOYGDsHa-dDS-iFdS8I2~OdZ2mZKJjHnvWYPjrbgD3mvPEUyaJ8yLLvQnzGCFxS3yFelVqkDQdyECb2oS~tcaqapZwIoNXtuaa75a2XTzPVEhjNOAcvOqasEBDpvw7SCA4GQJPyW5wLJfjjiqyBMMssH6flXGA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
   return (
     <section className='px-[40px] md:px-[80px] pt-10'>
         {/* div for the text at the top of the header */}
@@ -55,9 +55,9 @@ const HeaderContent = () => {
             
 
             {/* row for the header image */}
-            <article>
+            <article className='md:w-1/2'>
                 <div className='relative flex justify-center items-center pt-10'>
-                    <img src={headerImage} loading='lazy' alt="" className='filter grayscale' />
+                    <img src={imageSource} loading='lazy' alt="" className='filter grayscale' />
                     <img src={light} loading='lazy' alt="" className='absolute w-[90%]' />
                 </div>
             </article>
