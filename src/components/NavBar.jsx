@@ -19,17 +19,17 @@ const NavBar = () => {
             </Link>
             <div className='text-white flex gap-14'>
                 <a
-                 href='javascript:void(0)' 
+                 href='/#timeline' 
                  className='hover:opacity-80 hover:cursor-pointer'>
                     Timeline
                 </a>
                 <a
-                 href='javascript:void(0)' 
+                 href='/#intro' 
                  className='hover:opacity-80 hover:cursor-pointer'>
                     Overview
                 </a>
                 <a
-                 href='javascript:void(0)' 
+                 href='/#faqs' 
                  className='hover:opacity-80 hover:cursor-pointer'>
                     FAQs
                 </a>

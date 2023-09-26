@@ -5,7 +5,7 @@ import { TbNumber1, TbNumber2, TbNumber3, TbNumber4, TbNumber5, TbNumber6 } from
 
 const TimelineComp = () => {
   return (
-    <section>
+    <section id='timeline'>
       
       <article className='flex justify-center items-center'>
         <div className='md:w-1/2 text-center text-white p-20 pb-10'>

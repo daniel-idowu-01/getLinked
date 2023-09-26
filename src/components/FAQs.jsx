@@ -28,7 +28,7 @@ const FAQs = () => {
 };
 
   return (
-    <section className={container} data-aos='zoom-in'>
+    <section id='faqs' className={container} data-aos='zoom-in'>
       {/* div for the first row */}
       <article className='relative flex flex-col gap-3 md:w-1/2 mt-10 md:mt-0'>
         <img

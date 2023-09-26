@@ -16,8 +16,11 @@
     background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
     color: #fff;
     padding: 10px 36px;
-    border-radius: 4px;
-    
+    border-radius: 4px; 
+}
+
+.btn-top {
+    background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
 }
 
 .btn:hover {
