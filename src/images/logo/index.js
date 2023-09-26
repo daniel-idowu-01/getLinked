@@ -2,7 +2,6 @@ import logo from './getlinked.svg'
 import menuBar from './menu.svg'
 import circle from './circle.svg'
 import x from './x.svg'
-import light from './light.svg'
 import bulb from './bulb.svg'
 import chain from './chain.svg'
 import star from './star.svg'
@@ -27,5 +26,5 @@ import phone from './phone.svg'
 import location from './location.svg'
 
 export {
-    logo, menuBar, circle, x, light, bulb, chain, star, underline, spark, purpleBg, purpleBgRight, introArrow, purpleStar, questionMark, LibertyAssured, LibertyPay, Winwise, Wisper, PayBox, Vuzual, instagram, twitter, facebook, linkedin, phone, location
+    logo, menuBar, circle, x, bulb, chain, star, underline, spark, purpleBg, purpleBgRight, introArrow, purpleStar, questionMark, LibertyAssured, LibertyPay, Winwise, Wisper, PayBox, Vuzual, instagram, twitter, facebook, linkedin, phone, location
 }

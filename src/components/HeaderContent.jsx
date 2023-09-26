@@ -1,5 +1,5 @@
 import React from 'react'
-import { light, bulb, chain, star, underline, spark, purpleBg } from '../images/logo'
+import { bulb, chain, star, underline, spark, purpleBg } from '../images/logo'
 
 const HeaderContent = () => {
 
@@ -8,6 +8,8 @@ const HeaderContent = () => {
     const purpleBgStyle = 'absolute -top-[1%] md:top-0 rounded-[100%] md:rounded-none filter brightness-[.50] z-20 pointer-events-none'
 
     const imageSource = 'https://s3-alpha-sig.figma.com/img/2cea/d700/cfbd4eb06b68c33fac2a89295904df2c?Expires=1696809600&Signature=Ddgrzrcy6UQOirDSOMkOB8KZK1QmUpZl9kO4s7YcRprVCWySKiuTjX2Hoi-E42RPfO0-qd5wxtU1eBymblt0eQBSnkJT7pFn41cbch8ciXHbR7xuJXz-Qzv9t1nML3sfgmSpTUcOYJ-kJtsKGyptHJXE6DZhE2JWXuV2cBCSLXYnDKvtEporxRHsZOYGDsHa-dDS-iFdS8I2~OdZ2mZKJjHnvWYPjrbgD3mvPEUyaJ8yLLvQnzGCFxS3yFelVqkDQdyECb2oS~tcaqapZwIoNXtuaa75a2XTzPVEhjNOAcvOqasEBDpvw7SCA4GQJPyW5wLJfjjiqyBMMssH6flXGA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
+
+    const light = 'https://s3-alpha-sig.figma.com/img/396e/75fa/de110c53101d2c3b8d00dc3a9a731502?Expires=1696809600&Signature=mCEtbqly5Oskq0qWQKzD4PLUvVPhI6LWCLFq1dBFfWG0hu1cCNeN9xq3c3t-EVefUM3L5KvyYCdI8EUACK1v9JFLPHZQ1Tprd5tm-z7bgdOKjqZiCp~hJon6mjywcV9ekxH-alQdBFKMaCD38Ahl-pjSvNUvlSdJ3dlHEhfqHTkaKqStFpGUmo9WxwUahxMwSXhTuGCfbgZXTH45NUdjkANkwucEECVbOuB5uEA2ebf4mMLZYtNMl3AOIlHms6UzJg48~~xZQFz3aEFDNwpKoE3Jo1hEqSvzXSEmjgXvF3GwESIJ31YhqtTtflDYEtLlnUS0AMT5eUuyfdxpfQEgBg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
   return (
     <section className='px-[40px] md:px-[80px] pt-10'>
         {/* div for the text at the top of the header */}
